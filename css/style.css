@@ -72,6 +72,10 @@ form input {
   line-height: 15px;
 }
 
+label {
+  line-height: 40px;
+}
+
 .bg-pic {
   background-image: url(../images/usmc-sm.jpg);
   background-repeat: no-repeat;
@@ -125,11 +129,28 @@ form input {
 }
 
 .icon {
-  display: none;
+  display: none !important;
   float: right;
 }
 
 .mobilenav {
+  display: none;
+}
+
+.contactinfo {
+  width: 50%;
+}
+
+.contactinfo input {
+  float: right;
+  clear: both;
+}
+
+.contactinfo select {
+  float: right;
+}
+
+.mobilecontact {
   display: none;
 }
 
@@ -160,6 +181,12 @@ form input {
     clear: both;
   }
   .icon {
+    display: block !important;
+  }
+  .contactinfo {
+    display: none;
+  }
+  .mobilecontact {
     display: block;
   }
 }
@@ -171,7 +198,7 @@ form input {
   }
   p {
     font-family: Verdana;
-    font-size: 16px;
+    font-size: 18px;
   }
   .bg-pic {
     width: 100%;
@@ -185,6 +212,6 @@ form input {
     clear: both;
   }
   .icon {
-    display: block;
+    display: block !important;
   }
 }
